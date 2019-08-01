@@ -43,6 +43,7 @@ export const routes: Routes = [
       title: 'Register Page'
     }
   },
+
   {
     path: '',
     component: DefaultLayoutComponent,
@@ -54,6 +55,8 @@ export const routes: Routes = [
         path: 'base',
         loadChildren: () => import('./views/base/base.module').then(m => m.BaseModule)
       },
+
+
       {
         path: 'buttons',
         loadChildren: () => import('./views/buttons/buttons.module').then(m => m.ButtonsModule)

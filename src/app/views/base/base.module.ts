@@ -3,9 +3,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 
-import { CardsComponent } from './cards.component';
 
-// Forms Component
+// Forms Components
 import { FormsComponent } from './forms.component';
 
 import { SwitchesComponent } from './switches.component';
@@ -45,6 +44,9 @@ import { TooltipsComponent } from './tooltips.component';
 
 // Components Routing
 import { BaseRoutingModule } from './base-routing.module';
+import { cardsComponent } from './cards.component';
+import { clienteComponent } from './cliente.component';
+import { sistemaComponent } from './sistema.component';
 
 @NgModule({
   imports: [
@@ -61,7 +63,7 @@ import { BaseRoutingModule } from './base-routing.module';
     TooltipModule.forRoot()
   ],
   declarations: [
-    CardsComponent,
+    cardsComponent,
     FormsComponent,
     SwitchesComponent,
     TablesComponent,
@@ -71,7 +73,8 @@ import { BaseRoutingModule } from './base-routing.module';
     PaginationsComponent,
     PopoversComponent,
     ProgressComponent,
-    TooltipsComponent
-  ]
+    TooltipsComponent,
+    clienteComponent,
+    sistemaComponent  ]
 })
 export class BaseModule { }

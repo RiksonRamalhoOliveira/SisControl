@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { CardsComponent } from './cards.component';
 import { FormsComponent } from './forms.component';
 import { SwitchesComponent } from './switches.component';
 import { TablesComponent } from './tables.component';
@@ -12,6 +11,9 @@ import { PaginationsComponent } from './paginations.component';
 import {PopoversComponent} from './popovers.component';
 import {ProgressComponent} from './progress.component';
 import {TooltipsComponent} from './tooltips.component';
+import { cardsComponent } from './cards.component';
+import { clienteComponent } from './cliente.component';
+import { sistemaComponent } from './sistema.component';
 
 const routes: Routes = [
   {
@@ -20,17 +22,41 @@ const routes: Routes = [
       title: 'Base'
     },
     children: [
+
+
       {
         path: '',
         redirectTo: 'cards'
       },
       {
         path: 'cards',
-        component: CardsComponent,
+        component: cardsComponent,
         data: {
-          title: 'Cards'
+          title: 'Clientes'
         }
       },
+      {
+        path: 'sistema',
+        component: sistemaComponent,
+        data: {
+          title: 'Sistema'
+        }
+      },      {
+        path: '',
+        redirectTo: 'cliente'
+      },
+      {
+        path: 'cliente',
+        component: clienteComponent,
+        data: {
+          title: 'Clientes'
+        }
+      },
+
+
+
+
+
       {
         path: 'forms',
         component: FormsComponent,
