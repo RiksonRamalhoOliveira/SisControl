@@ -45,8 +45,13 @@ import { TooltipsComponent } from './tooltips.component';
 // Components Routing
 import { BaseRoutingModule } from './base-routing.module';
 import { cardsComponent } from './cards.component';
-import { clienteComponent } from './cliente.component';
-import { sistemaComponent } from './sistema.component';
+import { ClienteComponent } from './cliente.component';
+import { SistemaComponent } from './sistema.component';
+import { CargoComponent } from './cargo.component';
+import { RelacaoSistemaFuncionarioComponent } from './relacaoSistemaFuncionario.component';
+import { UsuarioComponent } from './usuario.component';
+import { FuncionarioComponent } from './funcionario.component';
+import { RelacaoSistemaInstituicaoComponent } from './relacaoSistemaInstituicao.component';
 
 @NgModule({
   imports: [
@@ -74,7 +79,13 @@ import { sistemaComponent } from './sistema.component';
     PopoversComponent,
     ProgressComponent,
     TooltipsComponent,
-    clienteComponent,
-    sistemaComponent  ]
+    ClienteComponent,
+    SistemaComponent,
+    CargoComponent,
+    FuncionarioComponent,
+    RelacaoSistemaFuncionarioComponent,
+    UsuarioComponent,
+    RelacaoSistemaInstituicaoComponent
+     ]
 })
 export class BaseModule { }

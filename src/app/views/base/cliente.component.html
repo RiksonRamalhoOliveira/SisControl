@@ -1,69 +1,130 @@
 <div class="animated fadeIn">
-    <div class="row">
-            <div class="col-xs-12 col-12 d-sm-down-none">
-              <div class="card">
-                <div class="card-header">
-                        <h1>Cadastro de Instituições</h1>
-                    </div>
-                <div class="card-body">
-                   <div class="row">
+  <div class="row">
+    <div class="col-xs-12 col-12 d-sm-down-none">
+      <div class="card">
+        <div class="card-header">
+          <h1>Cadastro de Instituições</h1>
 
-
-                       <div class="form-group col-sm-4">
-                    <label for="cnpj"><strong>CNPJ :</strong></label>
-                    <input type="text" class="form-control" id="cnpj" placeholder="Digite o CNPJ da instituição">
-                </div>
-                  </div>
-                  <div class="form-group">
-                        <label for="instituicao"><strong>Instituição :</strong></label>
-                        <input type="text" class="form-control" id="instituicao" placeholder="Digite o CNPJ da instituição">
-                      </div>
-                  <div class="form-group">
-                    <label for="endereco"><strong>Endereço :</strong></label>
-                    <input type="text" class="form-control" id="endereco" placeholder="Digite Rua e Número">
-                  </div>
-                  <div class="form-group">
-                        <label for="bairro"><strong>Bairro :</strong></label>
-                        <input type="text" class="form-control" id="bairro" placeholder="Digite bairro">
-                      </div>
-                  <div class="row">
-                    <div class="form-group col-sm-8">
-                      <label for="cidade"><strong>Cidade :</strong></label>
-                      <input type="text" class="form-control" id="cidade" placeholder="Digite a Cidade">
-                    </div>
-                    <div class="form-group col-sm-4">
-                      <label for="cep"> <strong>CEP :</strong></label>
-                      <input type="text" class="form-control" id="cep" placeholder="Digite o CEP">
-                    </div>
-                  </div><!--/.row-->
-                  <div class="form-group">
-                    <label for="contato"><strong>  Contato :</strong></label>
-                    <input type="text" class="form-control" id="contato" placeholder="Digite o contato">
-                  </div>
-                  <div class="row">
-                  <div class="form-group col-sm-4">
-                        <label for="telefone"> <strong>Telefone :</strong></label>
-                        <input type="text" class="form-control" id="telefone" placeholder="Digite o telefone">
-                    </div> 
-                </div>                 
-                </div>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="form-group col-sm-4">
+              <label for="cnpj"><strong>CNPJ :</strong></label>
+              <input type="text" class="form-control" id="cnpj" placeholder="Digite o CNPJ da instituição">
             </div>
-            <div class="row align-items-center mt-3"> 
-                    <div class="col-6 col-sm-4 col-md-2 col-xl mb-3 mb-xl-0">
-                        <button type="button" class="btn btn-block btn-outline-primary">Incluir</button>
-                    </div>         
-                    <div class="col-6 col-sm-4 col-md-2 col-xl mb-3 mb-xl-0">
-                        <button type="button" class="btn btn-block btn-outline-primary">Editar</button>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-2 col-xl mb-3 mb-xl-0">
-                            <button type="button" class="btn btn-block btn-outline-primary">Listar</button>
-                    </div>   
-                    <div class="col-6 col-sm-4 col-md-2 col-xl mb-3 mb-xl-0">
-                            <button type="button" class="btn btn-block btn-outline-primary">Excluir</button>
-                    </div>   
-            </div>       
-        </div><!--/.col-->
+          </div>
+          <div class="form-group">
+            <label for="instituicao"><strong>Instituição :</strong></label>
+            <input type="text" class="form-control" id="instituicao" placeholder="Digite o CNPJ da instituição">
+          </div>
+          <div class="row">
+              <div class="form-group col-8">
+            <label for="rua"><strong>Rua :</strong></label>
+            <input type="text" class="form-control" id="rua" placeholder="Digite Rua">
+              </div>
+              <div class="form-group col-sm-4">
+                  <label for="numero"> <strong>Número :</strong></label>
+                  <input type="text" class="form-control" id="numero" placeholder="Digite o número">
+                </div>
 
-    </div><!--/.row-->
+            </div>
+          <div class="form-group">
+            <label for="bairro"><strong>Bairro :</strong></label>
+            <input type="text" class="form-control" id="bairro" placeholder="Digite bairro">
+          </div>
+          <div class="row">
+            <div class="form-group col-sm-4">
+              <label for="cidade"><strong>Cidade :</strong></label>
+              <input type="text" class="form-control" id="cidade" placeholder="Digite a Cidade">
+            </div>
+            <div class="form-group col-sm-4">
+              <label for="uf"> <strong>UF :</strong></label>
+              <select class="form-control">
+                  <option>AC - Acre 				</option>
+                  <option>AL - Alagoas 			</option>
+                  <option>AP - Amapá 				</option>
+                  <option>AM - Amazonas 			</option>
+                  <option>BA - Bahia 				</option>
+                  <option>CE - Ceará 				</option>
+                  <option>DF - Distrito Federal 	</option>
+                  <option>ES - Espírito Santo 	</option>
+                  <option>GO - Goiás 				</option>
+                  <option>MA - Maranhão 			</option>
+                  <option>MT - Mato Grosso 		</option>
+                  <option>MS - Mato Grosso do Sul </option>
+                  <option>MG - Minas Gerais 		</option>
+                  <option>PA - Pará 				</option>
+                  <option>PB - Paraíba 			</option>
+                  <option>PR - Paraná 			</option>
+                  <option>PE - Pernambuco 		</option>
+                  <option>PI - Piauí 				</option>
+                  <option>RJ - Rio de Janeiro 	</option>
+                  <option>RN - Rio Grande do Norte</option>
+                  <option>RS - Rio Grande do Sul 	</option>
+                  <option>RO - Rondônia 			</option>
+                  <option>RR - Roraima 			</option>
+                  <option>SC - Santa Catarina 	</option>
+                  <option>SP - São Paulo  		</option>
+                  <option>SE - Sergipe 			</option>
+                  <option>TO - Tocantins			</option>
+                </select>            </div>
+            <div class="form-group col-sm-4">
+                <label for="cep"> <strong>CEP :</strong></label>
+                <input type="text" class="form-control" id="cep" placeholder="Digite o CEP">
+              </div>
+            </div>
+          <!--/.row-->
+          <div class="form-group">
+            <label for="contato"><strong> Contato :</strong></label>
+            <input type="text" class="form-control" id="contato" placeholder="Digite o contato">
+          </div>
+          <div class="row">
+            <div class="form-group col-sm-8">
+              <label for="email"> <strong>E-mail :</strong></label>
+              <input type="text" class="form-control" id="email" placeholder="Digite o E-mail">
+            </div>
+            <div class="form-group col-sm-4">
+                <label for="telefone"> <strong>Telefone :</strong></label>
+                <input type="text" class="form-control" id="telefone" placeholder="Digite o telefone">
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="row align-items-center mt-3">
+        <div class="col-6 col-sm-4 col-md-2 col-xl mb-3 mb-xl-0">
+          <button type="button" class="btn btn-block btn-outline-primary">Incluir</button>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 col-xl mb-3 mb-xl-0">
+          <button type="button" class="btn btn-block btn-outline-primary">Editar</button>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 col-xl mb-3 mb-xl-0">
+          <button type="button" class="btn btn-block btn-outline-primary">Listar</button>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 col-xl mb-3 mb-xl-0">
+          <button type="button" class="btn btn-block btn-outline-primary">Excluir</button>
+        </div>
+        <div class="card-body">
+            <ng-template #popTemplate>Porque usamos isso?
+                É um fato há muito estabelecido que um leitor se distrairá com o
+                conteúdo legível de uma página ao analisar seu layout. O ponto de
+                usar o Lorem Ipsum é que ele tem uma distribuição de letras mais ou
+                 menos normal, ao invés de usar 'Conteúdo aqui, conteúdo aqui',
+                  fazendo com que pareça legível em inglês. Muitos editores de
+                   editoração eletrônica e editores de páginas da web agora usam o Lorem
+                    Ipsum como seu texto de modelo padrão, e uma pesquisa por 'lorem ipsum'
+                     descobrirá muitos sites ainda na sua infância. Várias versões
+                     evoluíram ao longo dos anos, às vezes por acidente, às vezes de propósito
+                     (humor injetado e coisas do gênero). {{content}}</ng-template>
+            <button type="button" class="btn btn-warning"
+                    [popover]="popTemplate" popoverTitle="Cadastro de Instituições - Clientes">
+              Ajuda
+            </button>
+          </div>
+      </div>
+    </div>
+    <!--/.col-->
+
+  </div>
+  <!--/.row-->
 </div>
 <br />

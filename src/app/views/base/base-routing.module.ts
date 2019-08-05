@@ -12,8 +12,12 @@ import {PopoversComponent} from './popovers.component';
 import {ProgressComponent} from './progress.component';
 import {TooltipsComponent} from './tooltips.component';
 import { cardsComponent } from './cards.component';
-import { clienteComponent } from './cliente.component';
-import { sistemaComponent } from './sistema.component';
+import { RelacaoSistemaFuncionarioComponent } from './relacaoSistemaFuncionario.component';
+import { ClienteComponent } from './cliente.component';
+import { SistemaComponent } from './sistema.component';
+import { CargoComponent } from './cargo.component';
+import { UsuarioComponent } from './usuario.component';
+import { FuncionarioComponent } from './funcionario.component';
 
 const routes: Routes = [
   {
@@ -36,18 +40,50 @@ const routes: Routes = [
         }
       },
       {
+        path: 'cargo',
+        component: CargoComponent,
+        data: {
+          title: 'Cargo'
+        }
+      },
+      {
         path: 'sistema',
-        component: sistemaComponent,
+        component: SistemaComponent,
         data: {
           title: 'Sistema'
         }
-      },      {
+      },
+      {
+        path: 'funcionario',
+        component: FuncionarioComponent,
+        data: {
+          title: 'Funcionario'
+        }
+      },
+
+      {
+        path: 'relacaoSistemaFuncionario',
+        component: RelacaoSistemaFuncionarioComponent,
+        data: {
+          title: 'relacaoSistemaFuncionario'
+        }
+      },
+      {
+        path: 'usuario',
+        component: UsuarioComponent,
+        data: {
+          title: 'usuario'
+        }
+      },
+
+
+      {
         path: '',
         redirectTo: 'cliente'
       },
       {
         path: 'cliente',
-        component: clienteComponent,
+        component: ClienteComponent,
         data: {
           title: 'Clientes'
         }

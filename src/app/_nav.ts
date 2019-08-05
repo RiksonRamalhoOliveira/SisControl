@@ -39,28 +39,46 @@ export const navItems: NavData[] = [
   {
     name: 'Início',
     url: '/base',
-    icon: 'icon-globe',
+    icon: 'icon-menu',
     children: [
       {
         name: 'Instituições',
         url: '/base/cliente',
-        icon: 'icon-puzzle'
+        icon: 'icon-docs'
       },
       {
         name: 'Sistemas',
         url: '/base/sistema',
-        icon: 'icon-puzzle'
+        icon: 'icon-briefcase'
       },
       {
         name: 'Cargos',
-        url: '/base/collapses',
-        icon: 'icon-puzzle'
+        url: '/base/cargo',
+        icon: 'icon-layers'
       },
       {
         name: 'Funcionários',
-        url: '/base/forms',
-        icon: 'icon-puzzle'
+        url: '/base/funcionario',
+        icon: 'icon-people'
       },
+      {
+        name: 'Relação Sistema/Funcionario',
+        url: '/base/relacaoSistemaFuncionario',
+        icon: 'icon-people'
+      },
+
+      {
+        name: 'Relação Sistema/Instituição',
+        url: '/base/relacaoSistemaInstituicao',
+        icon: 'icon-people'
+      },
+
+      {
+        name: 'Usuários',
+        url: '/base/usuario',
+        icon: 'icon-people'
+      },
+
       {
         name: 'Pagination',
         url: '/base/paginations',
@@ -70,7 +88,7 @@ export const navItems: NavData[] = [
         name: 'Popovers',
         url: '/base/popovers',
         icon: 'icon-puzzle'
-      }, 
+      },
     ]
   },
 ];
